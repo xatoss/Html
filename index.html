@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLanzadera</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script>
+  function myFuncion() {
+        document.getElementById("demo").innerHTML = "Parrafo cambiado";
+    }
+function alerta() {
+         window.alert("Cuidado que te saco un ojo!!");
+    }
+
+
+</script>
+</head>
+<body>
+
+<main id="main">
+    <div>
+    <nav class="nav">
+        <img src="/ajuntament.jfif" alt="logo" style="width: 75px; height: 75px;">
+        <a href="index.html">Indice</a> |
+        <a href="nosotros.html">Sobre nosotros</a> |
+        <a href="contacto.html">Contacto</a> |
+    </nav>
+</div>
+
+<h1>Bienvenido  a la pagina lanzadora</h1>
+
+<section>
+<div class="flex-container">
+    <div class="bt1">
+    <h2>Pagina 1</h2>
+    <p>Una pagina de prueba</p>
+    <button type="button"><lo><a href="pagina1.html">Visitar</a></lo></button>
+
+</div>
+<div class="bt2">
+   
+    <h2>Pagina 2</h2>
+    <p>Una pagina de prueba</p>
+    <button type="button"><lo><a href="pagina2.html">Visitar</a></lo></button>
+   
+</div>
+<div class="bt3">
+   
+    <h2>Pagina 3</h2>
+    <p>Una pagina de prueba</p>
+    <button type="button"><lo><a href="pagina3.html">Visitar</a></lo></button>
+</div>
+</div>
+</section>
+<div>
+  
+<h2>Prueba JavaScript</h2>
+<p id="hola">  JavaScript puede cambiar contenido Html:
+<button type="button" onclick='document.getElementById ("hola").innerHTML ="Hola Antoni"'>Clicka me!!</button>
+</div>
+</p>
+<hr>
+<h2>Demostración JavaScript con funciones</h2>
+<p id="demo">El Parrafo</p>
+<button type="button" onclick= "myFuncion()">Intentalo!!</button>
+<hr>
+<h2>Prueba con ventana emergente</h2>
+<p id="alerta">
+<button type="button" onclick="alerta()">Cuidado</button>
+<hr>
+</p>
+<h2>Paso parametros</h2>
+<div>
+<form>
+<script>
+    
+    let num1 = 0;
+     
+    let num2 = 0;
+      
+    let resu = 0;
+    parseInt (num1,num2,resu); 
+    //let resu = ((num1+num2));
+    //document.getElementById('statements').innerHTML = "<p>El valor de la suma es:  ""+resu"</p>";
+    
+    
+    function sumar(num1, num2) {
+        
+      let resu = ((num1+num2)); 
+        //return resultado;
+       document.getElementById("sumar").innerHTML = "El valor de la suma es:  "+resu+"";
+        //console.log(resultado)
+            
+    }
+
+     //let resul = sumar (); 
+    //document.getElementById("pedir").innerHTML = "El resultado de la suma es: "+resul+"";
+    </script>
+</p>   
+
+  
+   <p id="sumar"> Ejercicio de paso de parámetros para sumarlos.<br><br></p>
+   
+   <label for="sumar">Dime un número</label><br>
+   <input type="number" id="sumar" name="sumar" min="1" max="3"/><br>
+   <label for="sumar">Dime otro número</label><br>
+   <input type="number" id="sumar" name="sumar" min="1" max="3"/><br>
+   <button type="submit" onclick="sumar()" value="submit">Sumar</button> 
+   </form>
+</div>  
+
+<hr>
+<h2>Condiciones</h2>
+<p id="edad">Prueba de condiciones</p>
+<div>
+<form>
+<label for="edad">Que edad tienes?</label><br>
+<input type="number" name="edad" id="edad"><br>
+<button type="button" onclick="edad()">Enviar</button>
+</form>
+</div>
+
+</main>
+
+<footer>
+<p>Web diseñada por Antoni Josep Calatayud Moltó  	&copy; </p>
+</footer>
+</body>
+</html>
+
